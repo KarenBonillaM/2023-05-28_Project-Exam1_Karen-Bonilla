@@ -1,0 +1,16 @@
+.posts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 100px;
+  gap: 50px;
+}
+
+.thumbnail-posts-page img {
+  width: 100%;
+  height: 450px;
+}
+
+.footer-container {
+  background-color: #A400DF;
+  color: white;
+}
