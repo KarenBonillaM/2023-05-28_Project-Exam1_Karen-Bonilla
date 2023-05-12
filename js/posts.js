@@ -19,7 +19,8 @@ async function getBlogs() {
 function createPostHTML (post) {
   const container = document.querySelector(".posts-container");
 
-  const postContainer = document.createElement("div");
+  const postContainer = document.createElement("a");
+  postContainer.href = "posts/details.html?id=" + post.id;
   postContainer.classList.add("post");
   postContainer.classList.add("thumbnail-posts-page");
 
@@ -35,8 +36,8 @@ function createPostHTML (post) {
     postContainer.append(img);
   }
 
-  const title = document.createElement("a");
-  title.href = "/posts.html?id" + post.id
+  //TITLE
+  const title = document.createElement("h3");
   title.classList.add("post-title")
   title.innerText = post.title.rendered;
   postContainer.append(title);

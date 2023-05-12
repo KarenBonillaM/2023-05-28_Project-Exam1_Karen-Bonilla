@@ -150,7 +150,7 @@ button {
   margin-left: 14px;
 }
 
-.carousel-container a:first-child {
+.carousel-container div:first-child {
   margin-left: 0px;
 }
 
