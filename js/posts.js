@@ -61,4 +61,5 @@ async function postSection () {
 
 postSection()
 
-
+/*By default Wordpress fetches 10 per page. I found it easiest to fetch page 2 so I only get the ones that are missing from the first fetch. My url looks like so /posts?per_page=10?page=2
+So I just added page 2 to the button activated fetch and ran that data through the renderPosts (or whatever you’ve named yours)*/

@@ -5,14 +5,10 @@
 
 body {
   background-color: #ffff;
-  font-family: "Bodoni Moda";
-  /*width: 100%;*/
+  font-family: Helvetica, arial, sans-serif;
   margin: 0;
 }
 
-p {
-  font-family: Helvetica, arial, sans-serif;
- }
 
 .header-container {
   background-color: #ffff;
@@ -41,6 +37,11 @@ nav a {
   font-size: 1.8em;
   color: black;
   font-weight: bold;
+  font-family: "Bodoni Moda";
+}
+
+nav a:hover {
+  color: #A400DF;
 }
 
 nav ul {
@@ -53,7 +54,7 @@ nav ul {
 
 .nav-container {
   display: flex;
-  margin: 0 100px;
+  margin: 0 120px;
   justify-content: space-between;
   padding-left: 0;
   min-height: 15vh;
@@ -78,13 +79,24 @@ footer {
 .nav-footer {
   display: flex;
   justify-content: space-between;
-  font-family: Helvetica, arial, sans-serif;
+  padding-left: 0;
 }
 
-.name-footer {
-  width: 35vh;
-  display: flex;
-  margin: auto;
+.name-logo {
+  font-size: 3em;
+  text-align: center;
+  color:#A400DF;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.footer-logo {
+  text-decoration: none;
+  font-family: "Bodoni Moda";
+}
+
+.footer-logo-white h2 {
+  color: white;
 }
 
 .social-media-container {

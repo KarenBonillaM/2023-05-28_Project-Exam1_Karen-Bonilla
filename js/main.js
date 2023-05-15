@@ -17,7 +17,7 @@ async function getBlogs() {
 }
 
 function createPostHTML (post) {
-  const container = document.querySelector(".posts-container");
+  const container = document.querySelector(".thumbnails-container");
 
   const postContainer = document.createElement("div");
   postContainer.classList.add("post");
