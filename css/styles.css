@@ -76,6 +76,15 @@ footer {
   padding-right: 100px;
 }
 
+.footer-container {
+  background-color: #A400DF;
+  color: white;
+}
+
+.footer-container nav a:hover {
+  color: white;
+}
+
 .nav-footer {
   display: flex;
   justify-content: space-between;
@@ -83,7 +92,7 @@ footer {
 }
 
 .name-logo {
-  font-size: 3em;
+  font-size: 2.8em;
   text-align: center;
   color:#A400DF;
   margin-top: 0;
@@ -98,6 +107,15 @@ footer {
 .footer-logo-white h2 {
   color: white;
 }
+
+footer nav {
+  margin: 0 100px;
+}
+
+#contact-extra-padding {
+  padding-right: 50px;
+}
+
 
 .social-media-container {
   margin-top: 35px;

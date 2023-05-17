@@ -44,7 +44,6 @@ function createPostHTML (post) {
 
   container.append(postContainer);
 
-
 }
 
 function createPostsHTML (posts) {
@@ -60,6 +59,38 @@ async function postSection () {
 }
 
 postSection()
+
+
+
+//POPUP IMAGES
+/*function createPopUpImg(post) {
+  const popupContainer = document.querySelector(".popup-container");
+
+  const featuredImages = post._embedded["wp:featuredmedia"];
+
+  for(let i = 0; i < featuredImages.length; i++) {
+    const popUpImgData = featuredImages[i];
+    const popUpImg = document.createElement("img");
+    popUpImg.classList.add("thumbnail")
+    popUpImg.src = popUpImgData.source_url;
+    popupContainer.append(popUpImg);
+  }
+}
+
+function createPopUpHTML (posts) {
+  for (let i = 0; i < posts.length; i++) {
+    const popUpPost = posts[i];
+    createPopUpImg(popUpPost)
+  }
+}
+
+async function popUpSection () {
+  const popUpPosts = await getBlogs();
+  createPopUpHTML(popUpPosts);
+}
+
+popUpSection()*/
+
 
 /*By default Wordpress fetches 10 per page. I found it easiest to fetch page 2 so I only get the ones that are missing from the first fetch. My url looks like so /posts?per_page=10?page=2
 So I just added page 2 to the button activated fetch and ran that data through the renderPosts (or whatever you’ve named yours)*/

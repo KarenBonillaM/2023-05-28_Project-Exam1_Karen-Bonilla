@@ -23,13 +23,15 @@
   font-weight: bold;
 }
 
-.categories-container p {
+.categories-container a {
   padding: 20px 0 110px 25px;
   background-color: rgb(100, 36, 183, 51%);
   margin-bottom: 0;
+  color: white;
+  text-decoration: none;
 }
 
-.categories-container p:hover {
+.categories-container a:hover {
   color: black;
 }
 

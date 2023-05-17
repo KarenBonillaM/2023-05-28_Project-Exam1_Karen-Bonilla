@@ -44,60 +44,73 @@
       </section>
     </header>
     <main>
-      <section class="form-container">
+      <section class="form-section">
         <form class="contact-form">
           <div class="message-success">
             Thank you for getting in touch! We appreciate you contacting
             "Swedish Blog"
           </div>
-          <div>
-            <label>
-              Full name (required)
-              <input name="fullname" id="name" />
-            </label>
-            <div class="form-error" id="fullNameError">
-              Please enter your full name
+          <div class="form-container">
+            <div>
+              <div class="form-field">
+                <label for="fullname"> Full name </label>
+                <input name="fullname" id="name" placeholder="required" />
+              </div>
+              <div class="form-error" id="fullNameError">
+                Please enter your full name
+              </div>
             </div>
-          </div>
-          <div>
-            <label>
-              Email (requiered)
-              <input name="email" id="email" />
-            </label>
-            <div class="form-error" id="emailError">
-              Please enter a valid email address
+            <div>
+              <div class="form-field">
+                <label for="email"> Email </label>
+                <input name="email" id="email" placeholder="required" />
+              </div>
+
+              <div class="form-error" id="emailError">
+                Please enter a valid email address
+              </div>
             </div>
-          </div>
-          <div>
-            <label>
-              Subject (requiered)
-              <input name="subject" id="subject" />
-            </label>
-            <div class="form-error" id="subjectError">Please enter subject</div>
-          </div>
-          <div>
-            <label>
-              Message (requiered)
-              <input name="message" id="message" />
-            </label>
-            <div class="form-error" id="messageError">
-              Please enter a message
+            <div>
+              <div class="form-field">
+                <label for="subject"> Subject </label>
+                <input name="subject" id="subject" placeholder="required" />
+              </div>
+
+              <div class="form-error" id="subjectError">
+                Please enter subject
+              </div>
             </div>
+            <div>
+              <div class="form-field">
+                <label for="message"> Message </label>
+                <input name="message" id="message" placeholder="required" />
+              </div>
+
+              <div class="form-error" id="messageError">
+                Please enter a message
+              </div>
+            </div>
+            <button>Submit</button>
           </div>
-          <button>Submit</button>
         </form>
+      </section>
+      <section class="form-img">
+        <img src="/images/mexico-mi-amor.jpg" alt="red wall with cactus in front
+        and the legent that says: "Mexico mi amor"/>
       </section>
     </main>
     <footer class="footer-container">
-      <a href="index.html" class="footer-logo">
+      <a href="index.html" class="footer-logo footer-logo-white">
         <h2 class="name-logo">Swexican Blog</h2>
       </a>
 
       <nav>
         <ul class="nav-footer">
           <li><a href="/about.html">About Us</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li>
+            <a href="/contact.html" id="contact-extra-padding">Contact</a>
+          </li>
+          <li><a href="/privacy.html">Policy</a></li>
         </ul>
       </nav>
       <section class="social-media-container">
