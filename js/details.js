@@ -33,16 +33,31 @@ const img = document.createElement("img");
   img.src = detailsImage.source_url;
   detailsContainer.append(img);
 
+  const popUpContainer = document.querySelector(".popup-container");
+  const closeIcon = document.querySelector(".close-icon");
+
+  const popUpImg = document.createElement("img");
+  popUpImg.src = img.src;
+  popUpImg.classList.add("popUp-img");
+  popUpContainer.append(popUpImg);
+
+  img.addEventListener("click", function() {
+    popUpContainer.style.display = "block";
+  });
+
+  closeIcon.addEventListener("click", function(){
+    popUpContainer.style.display = "none"
+  })
   console.log(detailsImage)
 
   const content = document.createElement("div");
   content.classList.add("content-container");
   content.innerHTML = details.content.rendered;
   detailsContainer.append(content);
+  return img;
 
 }
 
 fetchPost();
-
 
 

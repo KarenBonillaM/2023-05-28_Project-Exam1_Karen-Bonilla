@@ -10,9 +10,11 @@
 }
 
 .post-title {
-  text-align: center;
   color: black;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .post-title:hover {
@@ -35,26 +37,3 @@
   border-radius: 8px;
 }
 
-
-/*.popup-container {
-  position: fixed;
-  top: 0; left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-}
-
-.popup-container img {
-  width: 200px;
-  height: 200px;
-}
-
-.popup-container span {
-  position: absolute;
-  top: 0; right: 10px;
-  font-size: 40px;
-  font-weight: bolder;
-  color: white;
-  cursor: pointer;
-}*/

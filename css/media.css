@@ -142,4 +142,8 @@
     padding: 20px 50px;
   }
 
+  .popup-images img {
+    width: 90%;
+  }
+
 }
