@@ -1,11 +1,13 @@
-.posts-container {
+.posts-container,
+.morePosts-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 20px 100px;
   gap: 50px;
 }
 
-.posts-container a {
+.posts-container a,
+.morePosts-container a {
   text-decoration: none;
 }
 
@@ -37,3 +39,33 @@
   border-radius: 8px;
 }
 
+.button-moreposts-container {
+  padding-bottom: 30px;
+}
+
+#button-posts {
+  margin: auto;
+  text-align: center;
+  display: grid;
+  padding: 10px 14px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(226, 226, 88);
+  border-radius: 8px;
+  border: 2px solid rgb(234, 85, 6);
+}
+
+.button-moreposts-container button:hover {
+  background-color: orange;
+
+}
+
+.post {
+  display: none;
+}
+
+.post:nth-child(n+3) {
+  display: block;
+}
