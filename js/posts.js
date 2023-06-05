@@ -6,13 +6,13 @@ const blogsBase = "/posts?_embed";
 const fullBlogsURL = apiBase + wordpressBase + blogsBase;
 const blogsURL = "https://wordpress.karenbonilla.se/wp-json/wp/v2/posts?_embed";
 
-
+const container = document.querySelector(".posts-container");
 
 const morePosts = "&page=2";
 const morePostsURL = apiBase + wordpressBase + blogsBase + morePosts;
+const btn = document.querySelector("#button-posts");
 
 //GETTING DATA FROM API
-
 async function getBlogs() {
   const response = await fetch (fullBlogsURL);
 
@@ -21,8 +21,7 @@ async function getBlogs() {
   return posts;
 }
 
-
-
+//GETTING DATA FROM PAGE 2 API
 async function getMoreBlogs() {
   const response = await fetch (morePostsURL);
 
@@ -32,27 +31,12 @@ async function getMoreBlogs() {
 }
 
 
-
 function createPostHTML (post) {
-  const container = document.querySelector(".posts-container");
 
   const postContainer = document.createElement("a");
   postContainer.href = "posts/details.html?id=" + post.id;
   postContainer.classList.add("post");
   postContainer.classList.add("thumbnail-posts-page");
-
-  const btn = document.querySelector("#button-posts");
-  let currentPost = 10;
-
-  btn.addEventListener('click', function(){
-    for(let i = currentPost; i< currentPost+2; i++) {
-      if(postContainer[i]) {
-        postContainer[i].style.display = "block";
-      }
-    }  
-  })
-
-  currentPost += 2;
   
 
   //IMAGES
@@ -64,6 +48,7 @@ function createPostHTML (post) {
     const img = document.createElement("img");
     img.classList.add("thumbnail")
     img.src = imgData.source_url;
+    img.alt = imgData.alt_text;
     postContainer.append(img);
   }
 
@@ -77,14 +62,12 @@ function createPostHTML (post) {
 
 }
 
-
 function createPostsHTML (posts) {
   for (let i = 0; i < posts.length; i++) {
     const post = posts[i];
     createPostHTML(post)
   }
 }
-
 
 async function postSection () {
   const posts = await getBlogs();
@@ -93,10 +76,33 @@ async function postSection () {
 
 postSection()
 
-async function morePostSection () {
+btn.addEventListener("click", async function morePostSection() {
   const posts = await getMoreBlogs();
   createPostsHTML(posts);
-}
+}, {once : true},);
 
-morePostSection()
 
+
+//SEARCH BAR
+
+const search = document.querySelector("#search-item");
+
+search.onkeyup = function() {
+  const searchbox = document.querySelector("#search-item").value.toLowerCase();
+  const post = document.querySelectorAll(".post")
+  const postName = container.getElementsByTagName("h3");
+
+  for(let i = 0; i< postName.length; i++) {
+    let match = post[i].getElementsByTagName("h3")[0];
+
+    if(match) {
+      let textValue = match.textContent || match.innerHTML;
+
+      if(textValue.toLowerCase().indexOf(searchbox) > -1){
+        post[i].style.display = "";
+      } else {
+        post[i].style.display = "none";
+      }
+    }
+  }
+};

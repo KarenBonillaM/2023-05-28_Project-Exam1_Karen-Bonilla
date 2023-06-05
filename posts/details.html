@@ -17,10 +17,27 @@
       src="https://kit.fontawesome.com/ad1493ca4b.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Hotjar Tracking Code for Swexican Blog -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3501544, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
       <section class="header-container">
+        <h3 class="visible-hidden">header</h3>
         <a href="/index.html" class="logo-container">
           <img
             src="../images/logo.png"
@@ -28,12 +45,13 @@
             class="logo"
           />
         </a>
-        <div class="flexhome-side magnifying-glass-container">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <span class="visible-hidden">search</span>
-        </div>
+        <a href="/contact.html" class="flexhome-side sign-up-icon">
+          <i class="fa-solid fa-user"></i>
+          <span class="visible-hidden">sing up</span>
+        </a>
       </section>
       <section>
+        <h3 class="visible-hidden">navigation</h3>
         <nav class="home-navigation">
           <ul class="nav-container">
             <li><a href="/about.html">About Us</a></li>
@@ -43,9 +61,12 @@
         </nav>
       </section>
     </header>
-    <main>
-      <section class="details-container"></section>
+    <main class="posts-main-container">
+      <section class="details-container">
+        <h3 class="visible-hidden">details</h3>
+      </section>
       <section class="popup-container">
+        <h3 class="visible-hidden">popup image</h3>
         <span class="close-icon">&times;</span>
       </section>
     </main>
@@ -64,14 +85,28 @@
         </ul>
       </nav>
       <section class="social-media-container">
+        <h3 class="visible-hidden">social media</h3>
         <div>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-pinterest"></i>
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="visible-hidden">facebook</span>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="visible-hidden">instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="visible-hidden">linkedin</span>
+          </a>
+          <a href="https://www.pinterest.com/">
+            <i class="fa-brands fa-pinterest"></i>
+            <span class="visible-hidden">pinterest</span>
+          </a>
         </div>
       </section>
       <section class="privacy-container">
+        <h3 class="visible-hidden">signature</h3>
         <div>&#169; 2023 Swexican Blog</div>
         <div>Site by Karen Bonilla</div>
       </section>

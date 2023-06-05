@@ -10,38 +10,82 @@
       rel="stylesheet"
     />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/privacy.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/ad1493ca4b.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Hotjar Tracking Code for Swexican Blog -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3501544, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
       <section class="header-container">
-        <a href="/index.html" class="logo-container">
+        <h3 class="visible-hidden">header</h3>
+        <a href="index.html" class="logo-container">
           <img
             src="images/logo.png"
             alt="Logo for Swexican Blog"
             class="logo"
           />
         </a>
-        <div class="flexhome-side magnifying-glass-container">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <span class="visible-hidden">search</span>
-        </div>
+        <a href="contact.html" class="flexhome-side sign-up-icon">
+          <i class="fa-solid fa-user"></i>
+          <span class="visible-hidden">sing up</span>
+        </a>
       </section>
       <section>
+        <h3 class="visible-hidden">navigation</h3>
         <nav class="home-navigation">
           <ul class="nav-container">
-            <li><a href="/about.html">About Us</a></li>
-            <li><a href="/posts.html">Posts</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </section>
     </header>
-    <main></main>
+    <main class="main-padding policy-container">
+      <h1>Privacy Policy</h1>
+      <p>
+        Welcome to Swedish Blog. We are committed to protecting your privacy and
+        safeguarding your personal information. This Privacy Policy outlines how
+        we collect, use, disclose, and protect the information you provide while
+        accessing or using our website. By accessing or using our website, you
+        consent to the practices described in this Privacy Policy.
+      </p>
+      <p>
+        We may collect personal information such as your name, email address,
+        contact details, and any other information you choose to provide when
+        filling out forms or interacting with our website.
+      </p>
+      <p>
+        We may use the information you provide to personalize your experience on
+        our website, such as tailoring content and recommendations based on your
+        preferences.
+      </p>
+      <p>
+        We may use your contact information to respond to your inquiries,
+        provide requested information, and send you updates or promotional
+        materials related to our website or services. You have the option to opt
+        out of receiving such communications.
+      </p>
+    </main>
     <footer class="footer-container">
       <a href="index.html" class="footer-logo footer-logo-white">
         <h2 class="name-logo">Swexican Blog</h2>
@@ -49,22 +93,36 @@
 
       <nav>
         <ul class="nav-footer">
-          <li><a href="/about.html">About Us</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li>
-            <a href="/contact.html" id="contact-extra-padding">Contact</a>
+            <a href="contact.html" id="contact-extra-padding">Contact</a>
           </li>
-          <li><a href="/privacy.html">Policy</a></li>
+          <li><a href="privacy.html">Policy</a></li>
         </ul>
       </nav>
       <section class="social-media-container">
+        <h3 class="visible-hidden">social media</h3>
         <div>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-pinterest"></i>
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="visible-hidden">facebook</span>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="visible-hidden">instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="visible-hidden">linkedin</span>
+          </a>
+          <a href="https://www.pinterest.com/">
+            <i class="fa-brands fa-pinterest"></i>
+            <span class="visible-hidden">pinterest</span>
+          </a>
         </div>
       </section>
       <section class="privacy-container">
+        <h3 class="visible-hidden">signature</h3>
         <div>&#169; 2023 Swexican Blog</div>
         <div>Site by Karen Bonilla</div>
       </section>

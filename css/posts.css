@@ -1,3 +1,21 @@
+.header-container {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-icon {
+  padding-left: 10px;
+}
+
+#search-item {
+  height: 32px;
+  border-radius: 10px;
+}
+
 .posts-container,
 .morePosts-container {
   display: grid;
@@ -13,14 +31,14 @@
 
 .post-title {
   color: black;
-  font-size: 1.4em;
-  font-weight: 600;
+  font-size: 1.2em;
   text-align: center;
+  padding: 0 10px;
   text-transform: uppercase;
 }
 
 .post-title:hover {
-  color: #A400DF;
+  color: var(--color-footer);
 }
 
 .thumbnail {
@@ -34,8 +52,8 @@
 }
 
 .thumbnail-posts-page img {
-  width: 90%;
-  height: 400px;
+  width: 95%;
+  height: 380px;
   border-radius: 8px;
 }
 
@@ -52,20 +70,11 @@
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: rgb(226, 226, 88);
-  border-radius: 8px;
-  border: 2px solid rgb(234, 85, 6);
-}
-
-.button-moreposts-container button:hover {
   background-color: orange;
-
+  border-radius: 8px;
 }
 
-.post {
-  display: none;
-}
+#button-posts:hover {
+  background-color: rgb(177, 74, 246);
 
-.post:nth-child(n+3) {
-  display: block;
 }
