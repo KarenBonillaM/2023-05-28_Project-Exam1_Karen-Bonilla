@@ -1,5 +1,5 @@
 const form = document.querySelector(".contact-form");
-const fullName = document.querySelector("#name");
+const fullName = document.querySelector("#fullname");
 const nameError = document.querySelector("#fullNameError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
@@ -40,7 +40,7 @@ function validateForm() {
     messageError.style.display = "block";
   }
 
-if((checkLength(fullName.value, 0) === true) & (validateEmail(email.value) === true) & (checkLength(subject.value, 15) === true) & (checkLength(message.value, 25) === true)) {
+if((checkLength(fullName.value, 5) === true) & (validateEmail(email.value) === true) & (checkLength(subject.value, 15) === true) & (checkLength(message.value, 25) === true)) {
   messageSuccess.style.display = "block";
 } else {
   messageSuccess.style.display = "none";
