@@ -1,3 +1,5 @@
+# 2023-05-28_Project-Exam1_Karen-Bonilla
+
 # The Swexican Blog
 
 ![image](./images/logo.png)
@@ -47,16 +49,6 @@ The Swedish Blog is not open for contributions.
 
 ## Contact
 
-To get in contact with me
+[My Instagram page](https://www.instagram.com/karensofiabonillam)
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
-
-# 2023-05-28_Project-Exam1_Karen-Bonilla
-
-https://www.youtube.com/watch?v=7HPsdVQhpRw
+[My LinkedIn page](https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BfOA0gDejTF6O26SLmggcmA%3D%3D)
